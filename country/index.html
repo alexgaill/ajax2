@@ -13,6 +13,11 @@
             width: 44%;
             display: block;
         }
+        [formulaire]{
+            margin-top: 3rem;
+            min-height: 30rem;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -54,8 +59,16 @@
         </div>
         </section>
         <section formulaire>
-            <form></form>
-            <div id="showCountry"></div>
+            <form>
+                <select name="pays" id="chooseCountry"></select>
+                <button id="submitCountry">Choisir</button>
+            </form>
+            <div id="showCountry">
+                <h3 id="countryName"></h3>
+                <p>Capitale: <span id="countryCapital"></span></p>
+                <p>Population: <span id="countryPop"></span></p>
+                <p>Monnaie: <span id="countryCur"></span></p>
+            </div>
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="main.js"></script>
