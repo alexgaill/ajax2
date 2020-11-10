@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [table]{
+            display: flex;
+            flex-direction: row;
+        }
+        div{
+            width: 44%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liste des pays</h1>
+    <section table>
+        <div>
+
+            <h2>Il y a <span id="countEn"></span> pays qui parlent l'anglais</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pays</th>
+                        <th>Capitale</th>
+                        <th>Population</th>
+                        <th>Monnaie</th>
+                    </tr>
+                </thead>
+                <tbody id="tableEn">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div>
+
+            <h2>Il y a <span id="countFr"></span> pays qui parlent le français</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pays</th>
+                        <th>Capitale</th>
+                        <th>Population</th>
+                        <th>Monnaie</th>
+                    </tr>
+                </thead>
+                <tbody id="tableFr">
+                    
+                </tbody>
+            </table>
+        </div>
+        </section>
+        <section formulaire>
+            <form></form>
+            <div id="showCountry"></div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+    </html>
