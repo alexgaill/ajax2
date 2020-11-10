@@ -47,3 +47,25 @@ $.ajax({
     }
 })
 
+$.ajax({
+    url:"https://restcountries.eu/rest/v2/all",
+    method:"GET",
+    data:{
+        fields:"name;capital;population;currencies"
+    },
+    success:function(response){
+        $.ajax({
+            method:"POST",
+            url: "save.php",
+            dataType:"JSON",
+            data:response
+        }).done(function(response){
+            console.log("C'est bien enregistré!")
+        }).fail(function(response){
+            console.log(response.status)
+        })
+    },
+    error:function(response){
+        console.log(response)
+    }
+})
